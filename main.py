@@ -17,6 +17,7 @@ def main():
     os.makedirs("models", exist_ok=True)
     os.makedirs("figures", exist_ok=True)
     os.makedirs("notebooks", exist_ok=True)
+    os.makedirs("reports", exist_ok=True)
 
     # Load data
     print("\n📥 Loading data...")
@@ -34,7 +35,7 @@ def main():
 
     svm_model = train_svm(X_train_svm, y_train_svm)
     evaluate_svm(svm_model, X_test_svm, y_test_svm, save_dir="figures")
-    cross_validate_svm(svm_model, X_tfidf, y, cv=5)
+    cross_validate_svm(svm_model, X_tfidf, y, cv=5, save_dir="figures")
 
     save_model_pickle(svm_model, "models/svm_model.pkl")
     save_model_pickle(tfidf_vectorizer, "models/tfidf_vectorizer.pkl")
@@ -79,7 +80,7 @@ def main():
     report_svm = classification_report(y_test_svm, svm_model.predict(X_test_svm))
     report_bilstm = classification_report(y_true_bilstm, y_pred_bilstm, target_names=label_names)
 
-    with open("notebooks/performance_summary.txt", "w", encoding="utf-8") as f:
+    with open("reports/performance_summary.txt", "w", encoding="utf-8") as f:
         f.write("=== Evaluasi SVM ===\n")
         f.write(report_svm + "\n\n")
         f.write("=== Evaluasi BiLSTM (FastText) ===\n")
