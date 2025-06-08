@@ -4,8 +4,8 @@ import numpy as np
 import pandas as pd
 import re
 import nltk
+nltk.download('punkt')
 nltk.download('stopwords')
-nltk.download('punkt') 
 
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
@@ -25,7 +25,6 @@ label_encoder = joblib.load("models/label_encoder.pkl")
 
 lemmatizer = Lemmatizer()
 stop_words = set(stopwords.words('indonesian'))
-
 
 # === Preprocessing ===
 def clean_input(text):
