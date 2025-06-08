@@ -1,7 +1,7 @@
 # Abaikan file besar
-data/processed/Cleaned_GojekAppReview2.csv
+data/processed/Cleaned_GojekAppReview1_baru.csv
 data/word_embeddings/cc.id.300.vec
-data/raw/GojekAppReview.csv
+data/raw/GojekAppReview_1.csv
 
 # Abaikan environment
 venv/
