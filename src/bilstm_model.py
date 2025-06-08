@@ -96,4 +96,8 @@ def evaluate_bilstm(model, X_test, y_test, label_encoder=None, save_path=None):
         print(f"[✔] Classification report disimpan ke {report_txt_path}")
 
 
+<<<<<<< HEAD
     
+=======
+    
+>>>>>>> f886bbc (Add BiLSTM model using Git LFS)

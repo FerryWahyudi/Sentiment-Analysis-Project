@@ -90,4 +90,8 @@ def cross_validate_svm(model, X, y, cv=5, save_dir="figures"):
         f.write("=== 5-Fold Cross Validation Scores ===\n")
         for i, score in enumerate(scores, 1):
             f.write(f"Fold {i}: {score:.4f}\n")
+<<<<<<< HEAD
         f.write(f"\nMean Accuracy: {mean_score:.4f}\n")
+=======
+        f.write(f"\nMean Accuracy: {mean_score:.4f}\n")
+>>>>>>> f886bbc (Add BiLSTM model using Git LFS)

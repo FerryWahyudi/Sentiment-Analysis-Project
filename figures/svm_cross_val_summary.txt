@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 === 5-Fold Cross Validation Scores ===
 Fold 1: 0.8755
 Fold 2: 0.8736
@@ -6,3 +7,13 @@ Fold 4: 0.8737
 Fold 5: 0.8732
 
 Mean Accuracy: 0.8742
+=======
+=== 5-Fold Cross Validation Scores ===
+Fold 1: 0.8755
+Fold 2: 0.8736
+Fold 3: 0.8747
+Fold 4: 0.8737
+Fold 5: 0.8732
+
+Mean Accuracy: 0.8742
+>>>>>>> f886bbc (Add BiLSTM model using Git LFS)
