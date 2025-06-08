@@ -13,18 +13,19 @@ Analisis sentimen merupakan cabang penting dalam pengolahan bahasa alami (Natura
 ## 🗂 Struktur Direktori
 
 sentiment-analysis-project/
-├── data/ # sumber data gdrive
-├── figures/ # Visualisasi hasil analisis dan evaluasi model
-├── models/ # Model terlatih (.h5, .pkl)
-├── notebooks/ # Notebook Jupyter untuk eksplorasi data dan pelatihan model
-├── src/ # Skrip Python utama (training, prediksi, utils)
-├── .gitattributes # Konfigurasi atribut Git
-├── .gitignore # File untuk mengecualikan file/folder tertentu dari git
-├── README.md # Dokumentasi proyek
-├── main.py # Skrip utama untuk menjalankan proyek
-├── requirements.txt # Daftar paket Python yang dibutuhkan
-├── runtime.txt # Informasi runtime untuk platform tertentu (misal: Heroku)
-└── streamlit_app.py # Aplikasi interaktif untuk demo model dengan Streamlit
+├── data/              # Dataset ulasan (tidak disertakan di GitHub)
+├── figures/           # Visualisasi hasil evaluasi model
+├── models/            # Model terlatih (.h5 dan .pkl)
+├── nltk_data/         # Data tambahan NLTK untuk preprocessing
+├── notebooks/         # Notebook eksplorasi dan pelatihan
+├── reports/           # Laporan hasil analisis dan evaluasi model
+├── src/               # Skrip Python utama (training, prediction, utils)
+├── main.py            # Skrip utama untuk pelatihan dan evaluasi
+├── streamlit_app.py   # Aplikasi Streamlit untuk demo interaktif
+├── requirements.txt   # Daftar dependensi Python
+├── runtime.txt        # Konfigurasi runtime (misalnya untuk deployment)
+├── .gitignore         # File/folder yang diabaikan Git
+└── README.md          # Dokumentasi proyek
 
 
 ## ⚠️ Catatan Penting: Data Tidak Diunggah ke GitHub
@@ -35,7 +36,7 @@ Silakan unduh dataset secara manual melalui tautan berikut dan letakkan pada fol
 
 | Folder  | Isi Dataset                      | Link Unduh                                                                                       |
 | ------- | -------------------------------- | ------------------------------------------------------------------------------------------------ |
-| data/   | Dataset pelatihan dan pengujian   | [🔗 Download Dataset](https://drive.google.com/uc?id=YOUR_DATA_ID&export=download)               |
+| data/   | Dataset pelatihan dan pengujian   | [🔗 Download Dataset](https://drive.google.com/drive/folders/13cAl19bYk4aedJhtWVPkAHVypzTBuBGN?usp=sharing)
 
 ---
 
