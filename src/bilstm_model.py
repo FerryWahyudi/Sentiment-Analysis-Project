@@ -90,9 +90,10 @@ def evaluate_bilstm(model, X_test, y_test, label_encoder=None, save_path=None):
     plt.title("Confusion Matrix - BiLSTM")
 
     if save_path:
-        os.makedirs(os.path.dirname(save_path), exist_ok=True)
-        plt.savefig(save_path)
-        print(f"[✔] Confusion matrix disimpan ke {save_path}")
-        plt.close()
-    else:
-        plt.show()
+        report_txt_path = os.path.join(os.path.dirname(save_path), "bilstm_classification_report.txt")
+        with open(report_txt_path, "w", encoding="utf-8") as f:
+            f.write(classification_report(y_true, y_pred, target_names=target_names))
+        print(f"[✔] Classification report disimpan ke {report_txt_path}")
+
+
+    
