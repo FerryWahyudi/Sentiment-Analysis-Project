@@ -1,0 +1,19 @@
+# Abaikan file besar
+data/processed/Cleaned_GojekAppReview2.csv
+data/word_embeddings/cc.id.300.vec
+data/raw/GojekAppReview.csv
+
+# Abaikan environment
+venv/
+.venv/
+env/
+
+# Cache dan sementara
+__pycache__/
+*.pyc
+*.pyo
+*.log
+
+# Config editor
+.vscode/
+.idea/
